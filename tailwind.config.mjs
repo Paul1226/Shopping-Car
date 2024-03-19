@@ -12,6 +12,7 @@ export default {
 				cardBlur: '#ffffff20',
 				star: '#FFC244',
 				button: '#33C3F0',
+				buttonHover: '#33C3F099',
 			},
 			backgroundImage: {
 				'hero':'url("/hero.jpg")',
@@ -20,6 +21,9 @@ export default {
 
 			gridTemplateColumns: {
 				'3p': 'repeat(auto-fill, minmax(300px, 1fr))',
+			},
+			boxShadow: {
+				'shadowCarrito': '0 0 10px 0 #22222250',
 			},
 		},
 	},
