@@ -1,0 +1,36 @@
+---
+import { Cursos } from '../../cursos.js';
+import StarAll from '../icons/StarAll.astro';
+import Star from '../icons/Star.astro';
+---
+
+<section class="w-[90%] max-w-[1000px] mx-auto">
+    <h2 class="text-center text-3xl font-[700] mb-8">Cursos En Línea</h2>
+    <div class="grid grid-cols-3p gap-4">
+        {
+            Cursos.map(curso =>(
+                <article class="rounded-xl overflow-hidden bg-slate-200">
+                    <figure class="relative group">
+                        <img src={curso.image} alt="Imagen del curso" class="w-full group-hover:scale-105 transition-all duration-500 ease-in-out group-hover:filter group-hover:brightness-[30%]">
+                        <a href="#" class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-max bg-button uppercase p-2 text-white rounded-md [display:none] group-hover:block">Agregar al carrito</a>
+                    </figure>
+                    <div class="p-4 flex flex-col gap-2">
+                        <h3 class="text-lg font-bold leading-6">{curso.nombre}</h3>
+                        <p>{curso.autor}</p>
+                        <div class="valoracion flex gap-2">
+                            <StarAll class="w-[18px] fill-star"></StarAll>
+                            <StarAll class="w-[18px] fill-star"></StarAll>
+                            <StarAll class="w-[18px] fill-star"></StarAll>
+                            <StarAll class="w-[18px] fill-star"></StarAll>
+                            <Star class="w-[18px] fill-star"></Star>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="line-through">{curso.precioOriginal}</p>
+                            <p class="font-bold text-xl">{curso.precioDescuento}</p>
+                        </div>
+                    </div>
+                </article>
+            ))
+        }
+    </div>
+</section>

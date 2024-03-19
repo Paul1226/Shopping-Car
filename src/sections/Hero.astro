@@ -1,0 +1,44 @@
+---
+import Search from '../icons/Search.astro'
+import Light from '../icons/Light.astro'
+import Darts from '../icons/Darts.astro'
+import Clock from '../icons/Clock.astro'
+---
+<section>
+    <div class="bg-hero bg-no-repeat bg-cover bg-center">
+        <div class="w-[90%] max-w-[1000px] mx-auto flex flex-col gap-4 py-16">
+            <h1 class="text-white text-3xl font-[700]">Aprende algo nuevo</h1>
+            <p class="text-white text-xl">Todos los cursos a $15</p>
+            <form action="#" id="busqueda" method="post" class="formulario flex items-center justify-between rounded-lg overflow-hidden w-full max-w-[400px] bg-white">
+                <input class="px-4 h-[40px] w-full" type="text" placeholder="¿Que te gustaría Aprender?" id="buscador">
+                <Search class="w-[40px] fill-primary p-2 rounded-e-lg transition-all duration-300 ease-linear hover:fill-secondary hover:cursor-pointer"></Search>
+            </form>
+        </div>
+    </div>
+    <div class="bg-deg py-2">
+        <div class="grid grid-cols-3p gap-4 w-[90%] max-w-[1000px] mx-auto">
+            <article class="text-white flex gap-4 p-3 rounded-xl transition-all duration-300 ease-linear hover:backdroop-blur-md hover:bg-cardBlur">
+                <Light class="w-[35px] fill-white"></Light>
+                <div class="para">
+                    <p class="text-sm">20,000 Cursos en línea</p>
+                    <p class="text-sm">Explora los temas más recientes</p>
+                </div>
+            </article>
+            <article class="text-white flex gap-4 p-3 rounded-xl transition-all duration-300 ease-linear hover:backdroop-blur-md hover:bg-cardBlur">
+                <Darts class="w-[35px] fill-white"></Darts>
+                <div class="para">
+                    <p class="text-sm">Instructores Expertos</p>
+                    <p class="text-sm">Aprende con distintos estilos</p>
+                </div>
+            </article>
+            <article class="text-white flex gap-4 p-3 rounded-xl transition-all duration-300 ease-linear hover:backdroop-blur-md hover:bg-[#ffffff20]">
+                <Clock class="w-[35px] fill-white"></Clock>
+                <div class="para">
+                    <p class="text-sm">Acceso de por vida</p>
+                    <p class="text-sm">Aprende a tu ritmo</p>
+                </div>
+            </article>
+        </div>
+        
+    </div>
+</section>
