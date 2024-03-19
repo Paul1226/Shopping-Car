@@ -1,6 +1,6 @@
 export const Cursos = [
     {
-        id: 1,
+        dataId: 1,
         nombre: 'HTML, CSS y JavaScript para principiantes',
         autor: 'José Luis',
         image:'./public/curso01.jpg',
@@ -8,7 +8,7 @@ export const Cursos = [
         precioDescuento: '$15',
     },
     {
-        id: 2,
+        dataId: 2,
         nombre: 'Curso de Comida Vegetariana',
         autor: 'Jorge Alejandro',
         image:'./public/curso02.jpg',
@@ -16,7 +16,7 @@ export const Cursos = [
         precioDescuento: '$15',
     },
     {
-        id: 3,
+        dataId: 3,
         nombre: 'Guitarra para principiantes',
         autor: 'Eduardo García',
         image:'./public/curso03.jpg',
@@ -24,7 +24,7 @@ export const Cursos = [
         precioDescuento: '$15',
     },
     {
-        id: 4,
+        dataId: 4,
         nombre: 'Huerto en casa',
         autor: 'Emilia Cortés',
         image:'./public/curso04.jpg',
@@ -32,7 +32,7 @@ export const Cursos = [
         precioDescuento: '$15',
     },
     {
-        id: 5,
+        dataId: 5,
         nombre: 'Decoración con productos de tu casa',
         autor: 'Carlos Vega',
         image:'./public/curso05.jpg',
@@ -40,7 +40,7 @@ export const Cursos = [
         precioDescuento: '$15',
     },
     {
-        id: 6,
+        dataId: 6,
         nombre: 'Diseño Web para principiantes',
         autor: 'José Luis',
         image:'./public/curso01.jpg',
@@ -48,7 +48,7 @@ export const Cursos = [
         precioDescuento: '$15',
     },
     {
-        id: 7,
+        dataId: 7,
         nombre: 'Comida Mexicana para principiantes',
         autor: 'Camila Vega',
         image:'./public/curso02.jpg',
@@ -56,7 +56,7 @@ export const Cursos = [
         precioDescuento: '$15',
     },
     {
-        id: 8,
+        dataId: 8,
         nombre: 'Estudio Musical en tu casa',
         autor: 'Juan Pedro',
         image:'./public/curso03.jpg',
@@ -64,7 +64,7 @@ export const Cursos = [
         precioDescuento: '$15',
     },
     {
-        id: 9,
+        dataId: 9,
         nombre: 'Cosecha tus propias frutas y verduras',
         autor: 'Jorge Alejandro',
         image:'./public/curso04.jpg',
@@ -72,7 +72,7 @@ export const Cursos = [
         precioDescuento: '$15',
     },
     {
-        id: 10,
+        dataId: 10,
         nombre: 'Prepara galletas caseras',
         autor: 'Paola Vega',
         image:'./public/curso05.jpg',
@@ -80,7 +80,7 @@ export const Cursos = [
         precioDescuento: '$15',
     },
     {
-        id: 11,
+        dataId: 11,
         nombre: 'JavaScript moderno con ES6',
         autor: 'Manuel Salazar',
         image:'./public/curso01.jpg',
@@ -88,7 +88,7 @@ export const Cursos = [
         precioDescuento: '$15',
     },
     {
-        id: 12,
+        dataId: 12,
         nombre: '100 Recetas de comida natural',
         autor: 'Mercedes Cortés',
         image:'./public/curso02.jpg',

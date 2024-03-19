@@ -4,7 +4,7 @@ import Light from '../icons/Light.astro'
 import Darts from '../icons/Darts.astro'
 import Clock from '../icons/Clock.astro'
 ---
-<section>
+<section class="hero">
     <div class="bg-hero bg-no-repeat bg-cover bg-center">
         <div class="w-[90%] max-w-[1000px] mx-auto flex flex-col gap-4 py-16">
             <h1 class="text-white text-3xl font-[700]">Aprende algo nuevo</h1>
@@ -42,3 +42,25 @@ import Clock from '../icons/Clock.astro'
         
     </div>
 </section>
+
+<style>
+    .hero{
+        animation:entrada 1s ease-in-out both;
+    }
+
+    @keyframes entrada {
+
+        0% {
+            clip-path: polygon(0% 0%, 0 0, 0 50%, 0 100%, 0% 100%);
+            
+        }
+        30%{
+            clip-path: polygon(0% 0%, 0 0, 5% 50%, 0 100%, 0% 100%);
+
+        }
+
+        100% {
+            clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+        }
+    }
+</style>
