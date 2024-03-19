@@ -1,4 +1,5 @@
 ---
+import NoiseBackground from '../components/NoiseBackground.astro';
 interface Props {
 	title: string;
 }
@@ -26,6 +27,7 @@ import '@fontsource/source-sans-pro/900.css';
 		<title>{title}</title>
 	</head>
 	<body>
+		<NoiseBackground />
 		<slot />
 	</body>
 </html>
@@ -41,5 +43,6 @@ import '@fontsource/source-sans-pro/900.css';
 	}
 	body{
 		font-family: 'Source Sans Pro', sans-serif;
+		background-color: #4B304050;
 	}
 </style>
