@@ -1,16 +1,16 @@
 ---
 import ShoppingCard from '../icons/Shopping-cart.astro'
 ---
-<header class="header w-full py-2 sticky top-0 z-[999]">
+<header class="header w-full py-4 sticky top-0 z-[999] bg-white">
     <div class="w-[90%] max-w-[1000px] mx-auto flex justify-between items-center">
         <figure class="flex items-center gap-2">
             <img src="./public/favicon.svg" alt="Logo de la pagina web" class="w-[35px]">
-            <a href="/" class="font-playfair text-xl font-bold text-secondary uppercase">Universidad</a>
+            <a href="/" class="font-playfair text-xl font-bold text-sucentOrange-950 uppercase">Universidad</a>
         </figure>
         <div class="ca">
             <ul class="s">
                 <li class="relative group transition-all duration-300 ">
-                    <ShoppingCard class="w-[35px] fill-secondary950 transition-colors duration-200 ease-linear hover:fill-buttonActive800 hover:cursor-pointer"></ShoppingCard>
+                    <ShoppingCard class="w-[35px] fill-sucentOrange-950 transition-colors duration-200 ease-linear hover:fill-sucentOrange-700 hover:cursor-pointer"></ShoppingCard>
 
                     <!-- AQUI EMPIEZA LA LISTA DE CARRITO -->
                     <div id="carrito" class="absolute top-8 right-0 bg-white shadow-shadowCarrito rounded-lg min-h-[400px] max-h-[400px] w-[1000%] p-4 overflow-y-auto [display:none] group-hover:block">
@@ -18,11 +18,11 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
                         <table id="lista-carrito" class="u-full-width w-full">
                             <thead>
                                 <tr class="mb-2">
-                                    <th class="border-b-2 border-b-solid border-b-secondary950 py-2 px-2 text-center text-secondary950">Imagen</th>
-                                    <th class="border-b-2 border-b-solid border-b-secondary950 py-2 px-2 text-center text-secondary950">Nombre</th>
-                                    <th class="border-b-2 border-b-solid border-b-secondary950 py-2 px-2 text-center text-secondary950">Precio</th>
-                                    <th class="border-b-2 border-b-solid border-b-secondary950 py-2 px-2 text-center text-secondary950">Cantidad</th>
-                                    <th class="border-b-2 border-b-solid border-b-secondary950 py-2 px-2 text-center text-secondary950"></th>
+                                    <th class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950">Imagen</th>
+                                    <th class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950">Nombre</th>
+                                    <th class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950">Precio</th>
+                                    <th class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950">Cantidad</th>
+                                    <th class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950"></th>
                                 </tr>
                             </thead>
                             <tbody class="tbody">
@@ -30,7 +30,7 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
                             </tbody>
                         </table>
                         
-                        <a href="#" id="vaciar-carrito" class="text-center text-primary500 block mt-4 py-2 rounded-lg font-[200] border-[1px] border-solid border-primary500 hover:border-buttonHover600 hover:text-buttonHover600 active:border-secondary950 active:text-secondary950">Vaciar Carrito</a>
+                        <a href="#" id="vaciar-carrito" class="text-center text-sucentOrange-500 block mt-4 py-2 rounded-lg font-[200] border-[1px] border-solid border-sucentOrange-500 hover:border-sucentOrange-700 hover:text-sucentOrange-700 active:border-sucentOrange-950 active:text-sucentOrange-950">Vaciar Carrito</a>
                     </div>
                 </li>
             </ul>
@@ -140,7 +140,7 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
                 <td class="text-[#555] text-center">${precio}</td>
                 <td class="text-[#555] text-center">${cantidad}</td>
                 <td class="text-[#555] text-center">
-                    <a class="close text-white bg-primary500 flex justify-center items-center w-6 h-6 text-lg rounded-full hover:cursor-pointer hover:bg-buttonHover600 active:bg-secondary950" href="#" data-id="${id}">x
+                    <a class="close text-white bg-sucentOrange-500 flex justify-center items-center w-6 h-6 text-lg rounded-full hover:cursor-pointer hover:bg-sucentOrange-600 active:bg-sucentOrange-950" href="#" data-id="${id}">x
                     </a>
                 </td>
 
