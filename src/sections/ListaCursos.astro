@@ -9,14 +9,14 @@ import Star from '../icons/Star.astro';
     <div class="grid grid-cols-3p gap-6" id="lista-cursos">
         {
             Cursos.map(curso =>(
-                <article class="rounded-xl overflow-hidden bg-slate-200">
+                <article class="rounded-xl overflow-hidden bg-tertiary200sn">
                     <figure class="relative group">
                         <img src={curso.image} alt="Imagen del curso" class="w-full group-hover:scale-105 transition-all duration-500 ease-in-out group-hover:filter group-hover:brightness-[30%]">
-                        <a href="#" id="agregar" class="agregar absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-max bg-button uppercase p-2 text-white rounded-md [display:none] group-hover:block transition-colors duration-300  ease-linear hover:bg-buttonHover"data-id={curso.dataId}>Agregar al carrito</a>
+                        <a href="#" id="agregar" class="agregar absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-max bg-primary500 uppercase p-2 text-white rounded-md [display:none] group-hover:block transition-colors duration-300  ease-linear hover:bg-buttonHover600 active:bg-secondary950"data-id={curso.dataId}>Agregar al carrito</a>
                     </figure>
                     <div class="p-4 flex flex-col gap-2">
                         <h3 class="text-lg font-bold leading-6">{curso.nombre}</h3>
-                        <p>{curso.autor}</p>
+                        <p class="text-[#861a16]">{curso.autor}</p>
                         <div class="valoracion flex gap-2">
                             <StarAll class="w-[18px] fill-star"></StarAll>
                             <StarAll class="w-[18px] fill-star"></StarAll>
@@ -26,7 +26,7 @@ import Star from '../icons/Star.astro';
                         </div>
                         <div class="flex justify-between items-center">
                             <p class="line-through">{curso.precioOriginal}</p>
-                            <p class="precioDescuento font-bold text-xl">{curso.precioDescuento}</p>
+                            <p class="precioDescuento font-bold text-xl text-[#e8211a]">{curso.precioDescuento}</p>
                         </div>
                     </div>
                 </article>

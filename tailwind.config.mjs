@@ -7,12 +7,13 @@ export default {
 				playfair: ['Playfair Display Variable', 'serif'],
 			},
 			colors: {
-				primary: '#FB554F',
-				secondary: '#444',
-				cardBlur: '#ffffff20',
+				primary500: '#ff6d68',
+				secondary950: '#490806',
+				tertiary200: '#ffc9c750',
+				tertiary200sn: '#ffc9c7',
 				star: '#FFC244',
-				button: '#33C3F0',
-				buttonHover: '#33C3F099',
+				buttonHover600: '#c41711',
+				buttonActive800: '#a11813',
 			},
 			backgroundImage: {
 				'hero':'url("/hero.jpg")',

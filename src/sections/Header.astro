@@ -5,24 +5,24 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
     <div class="w-[90%] max-w-[1000px] mx-auto flex justify-between items-center">
         <figure class="flex items-center gap-2">
             <img src="./public/favicon.svg" alt="Logo de la pagina web" class="w-[35px]">
-            <a href="/" class="font-playfair text-xl font-bold text-secondary">Universidad</a>
+            <a href="/" class="font-playfair text-xl font-bold text-secondary uppercase">Universidad</a>
         </figure>
         <div class="ca">
             <ul class="s">
                 <li class="relative group transition-all duration-300 ">
-                    <ShoppingCard class="w-[35px] fill-secondary transition-colors duration-200 ease-linear hover:fill-primary hover:cursor-pointer"></ShoppingCard>
+                    <ShoppingCard class="w-[35px] fill-secondary950 transition-colors duration-200 ease-linear hover:fill-buttonActive800 hover:cursor-pointer"></ShoppingCard>
 
                     <!-- AQUI EMPIEZA LA LISTA DE CARRITO -->
                     <div id="carrito" class="absolute top-8 right-0 bg-white shadow-shadowCarrito rounded-lg min-h-[400px] max-h-[400px] w-[1000%] p-4 overflow-y-auto [display:none] group-hover:block">
                             
                         <table id="lista-carrito" class="u-full-width w-full">
                             <thead>
-                                <tr>
-                                    <th class="border-b-2 border-b-solid border-b-[#999] py-2 px-2 text-center">Imagen</th>
-                                    <th class="border-b-2 border-b-solid border-b-[#999] py-2 px-2 text-center">Nombre</th>
-                                    <th class="border-b-2 border-b-solid border-b-[#999] py-2 px-2 text-center">Precio</th>
-                                    <th class="border-b-2 border-b-solid border-b-[#999] py-2 px-2 text-center">Cantidad</th>
-                                    <th class="border-b-2 border-b-solid border-b-[#999] py-2 px-2 text-center"></th>
+                                <tr class="mb-2">
+                                    <th class="border-b-2 border-b-solid border-b-secondary950 py-2 px-2 text-center text-secondary950">Imagen</th>
+                                    <th class="border-b-2 border-b-solid border-b-secondary950 py-2 px-2 text-center text-secondary950">Nombre</th>
+                                    <th class="border-b-2 border-b-solid border-b-secondary950 py-2 px-2 text-center text-secondary950">Precio</th>
+                                    <th class="border-b-2 border-b-solid border-b-secondary950 py-2 px-2 text-center text-secondary950">Cantidad</th>
+                                    <th class="border-b-2 border-b-solid border-b-secondary950 py-2 px-2 text-center text-secondary950"></th>
                                 </tr>
                             </thead>
                             <tbody class="tbody">
@@ -30,7 +30,7 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
                             </tbody>
                         </table>
                         
-                        <a href="#" id="vaciar-carrito" class="text-center block mt-4 py-2 rounded-lg border-2 border-solid border-[#99999950] hover:border-[#99999990]">Vaciar Carrito</a>
+                        <a href="#" id="vaciar-carrito" class="text-center text-primary500 block mt-4 py-2 rounded-lg font-[200] border-[1px] border-solid border-primary500 hover:border-buttonHover600 hover:text-buttonHover600 active:border-secondary950 active:text-secondary950">Vaciar Carrito</a>
                     </div>
                 </li>
             </ul>
@@ -43,7 +43,7 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
     .header{
         animation: headerScrool 0.5s ease-in-out both;
         animation-timeline: scroll(root block);
-        animation-range: 0 200px;
+        animation-range: 0 150px;
     }
     @keyframes headerScrool {
         100% {
@@ -136,11 +136,11 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
                     <img class="w-full rounded-md m-0" src="${image}" alt="imagen del curso en carrito">
                 </td>
 
-                <td class="text-xs pl-2 py-2">${title}</td>
-                <td class="text-center">${precio}</td>
-                <td class="text-center">${cantidad}</td>
-                <td class="text-center">
-                    <a class="close text-white bg-red-500 flex justify-center items-center w-6 h-6 text-lg rounded-full hover:cursor-pointer" href="#" data-id="${id}">x
+                <td class="text-[#555] text-xs pl-2 py-2">${title}</td>
+                <td class="text-[#555] text-center">${precio}</td>
+                <td class="text-[#555] text-center">${cantidad}</td>
+                <td class="text-[#555] text-center">
+                    <a class="close text-white bg-primary500 flex justify-center items-center w-6 h-6 text-lg rounded-full hover:cursor-pointer hover:bg-buttonHover600 active:bg-secondary950" href="#" data-id="${id}">x
                     </a>
                 </td>
 

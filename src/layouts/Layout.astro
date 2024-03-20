@@ -10,6 +10,7 @@ const { title } = Astro.props;
 import '@fontsource-variable/playfair-display';
 
 // source-sans-pro
+import '@fontsource/source-sans-pro/200.css';
 import '@fontsource/source-sans-pro/400.css';
 import '@fontsource/source-sans-pro/600.css';
 import '@fontsource/source-sans-pro/700.css';
@@ -27,7 +28,7 @@ import '@fontsource/source-sans-pro/900.css';
 		<title>{title}</title>
 	</head>
 	<body>
-		<NoiseBackground />
+		<!-- <NoiseBackground /> -->
 		<slot />
 	</body>
 </html>
@@ -40,9 +41,11 @@ import '@fontsource/source-sans-pro/900.css';
 
 	h1,h2,h3,h4,h5,h6{
 		font-family: 'Playfair Display Variable', serif;
+		color: #490806;
 	}
 	body{
 		font-family: 'Source Sans Pro', sans-serif;
-		background-color: #4B304050;
+		/* background-color: tertiary200; */
+		color: #861a16;
 	}
 </style>
