@@ -1,36 +1,72 @@
 ---
-import ShoppingCard from '../icons/Shopping-cart.astro'
+import ShoppingCard from "../icons/Shopping-cart.astro";
 ---
+
 <header class="header w-full py-4 sticky top-0 z-[999] bg-white">
-    <div class="w-[90%] max-w-[1000px] mx-auto flex justify-between items-center">
+    <div
+        class="w-[90%] max-w-[1000px] mx-auto flex justify-between items-center"
+    >
         <figure class="flex items-center gap-2">
-            <img src="./public/favicon.svg" alt="Logo de la pagina web" class="w-[35px]">
-            <a href="/" class="font-playfair text-xl font-bold text-sucentOrange-950 uppercase">Universidad</a>
+            <svg
+                class="w-[35px]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#FB554F"
+                viewBox="0 0 24 24"
+                ><path
+                    d="M23.58 13.38a.66.66 0 0 0-.28-.14c-.6.61-1.35 1.25-2 1.68-.31.2-.7.3-.95.3-.59 0-.84-.55-.91-1.44a54.8 54.8 0 0 1-.17-4.83c0-2.26-.52-3.8-1.88-3.92l-.18-.01c-.83 0-1.24.43-1.77 1.52-.46.94-1.17 2.3-2.48 4.9a34.72 34.72 0 0 1-3.5 5.58c-.31.38-.55.64-.78.8a.8.8 0 0 1-.44.14c-.43 0-.75-.36-.85-1.21a5.46 5.46 0 0 1-.04-.69c0-1.75.66-4.6 1.8-8.78.83-3.05.48-5.13-1.34-5.13h-.03c-.41 0-.75.16-1.08.42-.33.25-.65.81-.96 1.56-.34.84-2.42 5.03-5.74 7.2-.04.81.42 1.63 1.37 1.73.85.08 1.46-.28 2.24-.81l-.16.73a31.56 31.56 0 0 0-.5 2.6c-.46 4.2 1.47 6.27 3.74 6.27.38 0 .76-.05 1.13-.15 2.5-.63 4.9-3.51 7.75-10.13a18.8 18.8 0 0 0-.01 2.02c.19 3.8 1.68 4.93 3.8 4.93 1.6 0 3.09-.83 3.85-1.87a3.7 3.7 0 0 0 .79-2.19c-.02-.49-.17-.88-.42-1.08z"
+                ></path></svg
+            >
+            <a
+                href="/"
+                class="font-playfair text-xl font-bold text-sucentOrange-950 uppercase"
+                >Universidad</a
+            >
         </figure>
         <div class="ca">
             <ul class="s">
-                <li class="relative group transition-all duration-300 ">
-                    <ShoppingCard class="w-[35px] fill-sucentOrange-950 transition-colors duration-200 ease-linear hover:fill-sucentOrange-700 hover:cursor-pointer"></ShoppingCard>
+                <li class="relative group transition-all duration-300">
+                    <ShoppingCard
+                        class="w-[35px] fill-sucentOrange-950 transition-colors duration-200 ease-linear hover:fill-sucentOrange-700 hover:cursor-pointer"
+                    />
 
                     <!-- AQUI EMPIEZA LA LISTA DE CARRITO -->
-                    <div id="carrito" class="absolute top-8 right-0 bg-white shadow-shadowCarrito rounded-lg min-h-[400px] max-h-[400px] w-[1000%] p-4 overflow-y-auto [display:none] group-hover:block">
-                            
+                    <div
+                        id="carrito"
+                        class="absolute top-8 right-0 bg-white shadow-shadowCarrito rounded-lg min-h-[400px] max-h-[400px] w-[1000%] p-4 overflow-y-auto [display:none] group-hover:block"
+                    >
                         <table id="lista-carrito" class="u-full-width w-full">
                             <thead>
                                 <tr class="mb-2">
-                                    <th class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950">Imagen</th>
-                                    <th class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950">Nombre</th>
-                                    <th class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950">Precio</th>
-                                    <th class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950">Cantidad</th>
-                                    <th class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950"></th>
+                                    <th
+                                        class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950"
+                                        >Imagen</th
+                                    >
+                                    <th
+                                        class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950"
+                                        >Nombre</th
+                                    >
+                                    <th
+                                        class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950"
+                                        >Precio</th
+                                    >
+                                    <th
+                                        class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950"
+                                        >Cantidad</th
+                                    >
+                                    <th
+                                        class="border-b-2 border-b-solid border-b-sucentOrange-950 py-2 px-2 text-center text-sucentOrange-950"
+                                    ></th>
                                 </tr>
                             </thead>
-                            <tbody class="tbody">
-                                
-                            </tbody>
+                            <tbody class="tbody"> </tbody>
                         </table>
-                        
-                        <a href="#" id="vaciar-carrito" class="text-center text-sucentOrange-500 block mt-4 py-2 rounded-lg font-[200] border-[1px] border-solid border-sucentOrange-500 hover:border-sucentOrange-700 hover:text-sucentOrange-700 active:border-sucentOrange-950 active:text-sucentOrange-950">Vaciar Carrito</a>
+
+                        <a
+                            href="#"
+                            id="vaciar-carrito"
+                            class="text-center text-sucentOrange-500 block mt-4 py-2 rounded-lg font-[200] border-[1px] border-solid border-sucentOrange-500 hover:border-sucentOrange-700 hover:text-sucentOrange-700 active:border-sucentOrange-950 active:text-sucentOrange-950"
+                            >Vaciar Carrito</a
+                        >
                     </div>
                 </li>
             </ul>
@@ -39,8 +75,7 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
 </header>
 
 <style>
-
-    .header{
+    .header {
         animation: headerScrool 0.5s ease-in-out both;
         animation-timeline: scroll(root block);
         animation-range: 0 150px;
@@ -49,67 +84,65 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
         100% {
             background-color: #ffffff90;
             backdrop-filter: blur(10px);
-            border-radius:0 0 15px 15px;
+            border-radius: 0 0 15px 15px;
         }
-        
     }
 </style>
 
-<script type="module">
-    const carrito = document.querySelector('#carrito');
-    const contenedorCarrito = document.querySelector('#lista-carrito tbody');
-    const listaCursos = document.querySelector('#lista-cursos');
-    const vaciarCarrito = document.querySelector('#vaciar-carrito');
+<script is:inline type="module">
+    const carrito = document.querySelector("#carrito");
+    const contenedorCarrito = document.querySelector("#lista-carrito tbody");
+    const listaCursos = document.querySelector("#lista-cursos");
+    const vaciarCarrito = document.querySelector("#vaciar-carrito");
     let articulosCarrito = [];
 
-    
-
     cargarEventListeners();
-    function cargarEventListeners(){
+    function cargarEventListeners() {
         // Cuando agregas un curso presionando "agregar al carrito"
-        listaCursos.addEventListener('click', agregarCurso);
+        listaCursos.addEventListener("click", agregarCurso);
 
         // Eliminar cursos del carrito
-        carrito.addEventListener('click', eliminarCurso);
+        carrito.addEventListener("click", eliminarCurso);
 
-        // vaciar carrito 
-        vaciarCarrito.addEventListener('click', ()=>{
+        // vaciar carrito
+        vaciarCarrito.addEventListener("click", () => {
             articulosCarrito = [];
             limpiarHTML();
-        })
+        });
     }
 
-    function agregarCurso (e){
+    function agregarCurso(e) {
         e.preventDefault();
-        if(e.target.classList.contains('agregar')){
+        if (e.target.classList.contains("agregar")) {
             const cursoSeleccionado = e.target.parentElement.parentElement;
             leerDatosCurso(cursoSeleccionado);
         }
     }
 
-    function leerDatosCurso(curso){
+    function leerDatosCurso(curso) {
         const infoCurso = {
-            image: curso.querySelector('img').src,
-            title:curso.querySelector('h3').textContent,
-            precio:curso.querySelector('.precioDescuento').textContent,
-            id:curso.querySelector('a').getAttribute('data-id'),
-            cantidad:1
-        }
+            image: curso.querySelector("img").src,
+            title: curso.querySelector("h3").textContent,
+            precio: curso.querySelector(".precioDescuento").textContent,
+            id: curso.querySelector("a").getAttribute("data-id"),
+            cantidad: 1,
+        };
 
         // revisar si el elemento ya existe en el carrito
-        const existe = articulosCarrito.some(curso=>curso.id === infoCurso.id);
-        if (existe){
-            const cursos = articulosCarrito.map(curso=>{
-                if (curso.id === infoCurso.id){
+        const existe = articulosCarrito.some(
+            (curso) => curso.id === infoCurso.id,
+        );
+        if (existe) {
+            const cursos = articulosCarrito.map((curso) => {
+                if (curso.id === infoCurso.id) {
                     curso.cantidad++;
                     return curso;
-                } else{
-                    return curso
+                } else {
+                    return curso;
                 }
-
             });
             articulosCarrito = [...cursos];
-        } else{
+        } else {
             articulosCarrito = [...articulosCarrito, infoCurso];
         }
 
@@ -117,13 +150,13 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
         carritoHTML();
     }
 
-    function carritoHTML(){
+    function carritoHTML() {
         limpiarHTML();
 
         // genera el html
-        articulosCarrito.forEach(curso => {
-            const {image, title, precio, cantidad, id} = curso;
-            const row = document.createElement('tr');
+        articulosCarrito.forEach((curso) => {
+            const { image, title, precio, cantidad, id } = curso;
+            const row = document.createElement("tr");
             row.innerHTML = `
                 <td class="w-full">
                     <img class="w-full rounded-md m-0" src="${image}" alt="imagen del curso en carrito">
@@ -143,23 +176,24 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
             contenedorCarrito.appendChild(row);
         });
         // console.log(articulosCarrito);
-    };
+    }
 
-    function limpiarHTML(){
-        while(contenedorCarrito.firstChild){
+    function limpiarHTML() {
+        while (contenedorCarrito.firstChild) {
             contenedorCarrito.removeChild(contenedorCarrito.firstChild);
         }
     }
 
     // eliminar del carrito
-    function eliminarCurso(e){
+    function eliminarCurso(e) {
         e.preventDefault();
-        if(e.target.classList.contains('close')){
-            const cursoId = e.target.getAttribute('data-id');
+        if (e.target.classList.contains("close")) {
+            const cursoId = e.target.getAttribute("data-id");
 
-            articulosCarrito = articulosCarrito.filter(curso => curso.id !== cursoId);
+            articulosCarrito = articulosCarrito.filter(
+                (curso) => curso.id !== cursoId,
+            );
             carritoHTML();
         }
     }
-    
 </script>
