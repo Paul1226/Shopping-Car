@@ -53,12 +53,6 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
         }
         
     }
-
-    .tbody{
-        
-        tr{
-        }
-    }
 </style>
 
 <script type="module">
@@ -68,7 +62,6 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
     const vaciarCarrito = document.querySelector('#vaciar-carrito');
     let articulosCarrito = [];
 
-    // console.log(listaCursos)
     
 
     cargarEventListeners();
@@ -149,7 +142,7 @@ import ShoppingCard from '../icons/Shopping-cart.astro'
 
             contenedorCarrito.appendChild(row);
         });
-        console.log(articulosCarrito);
+        // console.log(articulosCarrito);
     };
 
     function limpiarHTML(){
